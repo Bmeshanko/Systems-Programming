@@ -11,6 +11,6 @@ thr:
 	g++ -o Threads/thr Threads/thr.cc -lpthread
 
 clean:
-	rm -f *.o thr
+	rm -f *.o Threads/thr
 
 
