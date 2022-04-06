@@ -1,4 +1,4 @@
-all: git-commit
+all: git-commit thr
 
 .PHONY: git-commit
 git-commit:
@@ -6,3 +6,11 @@ git-commit:
 	git add Makefile *.c >> .local.git.out || echo
 	git commit -a -m "Commit from Makefile" >> .local.git.out || echo
 	git push >> .local.git.out || echo
+
+thr:
+	g++ -o thr thr.cc -lpthread
+
+clean:
+	rm -f *.o thr
+
+
