@@ -5,4 +5,4 @@ git-commit:
 	git checkout master >> .local.git.out || echo
 	git add . >> .local.git.out || echo
 	git commit -a -m "Commit from Makefile" >> .local.git.out || echo
-	git push origin master
+	git push

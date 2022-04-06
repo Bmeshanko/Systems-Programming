@@ -8,3 +8,8 @@ Untracked files:
 	main.c
 
 nothing added to commit but untracked files present (use "git add" to track)
+[main 69df943] Commit from Makefile
+ 3 files changed, 23 insertions(+)
+ create mode 100644 .local.git.out
+ create mode 100644 Makefile
+ create mode 100644 main.c
