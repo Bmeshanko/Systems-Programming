@@ -82,3 +82,6 @@ nothing to commit, working tree clean
  2 files changed, 3 insertions(+), 1 deletion(-)
 [main 2b6f634] Commit from Makefile
  2 files changed, 3 insertions(+), 1 deletion(-)
+[main b36bc96] Commit from Makefile
+ 2 files changed, 25 insertions(+)
+ create mode 100644 Threads/thr.cc
