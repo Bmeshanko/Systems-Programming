@@ -26,8 +26,6 @@ int main (int argc, const char **argv) {
 
 	pthread_mutex_init(&lock, 0);
 
-	printC("A");
-
-	pthread_create(&t1, &attr, (void * (*)(void *)) printC, (void *) "B" );
-	pthread_create(&t2, &attr, (void * (*)(void *)) printC, (void *) "C" );
+	pthread_create(&t1, &attr, (void * (*)(void *)) printC, (void *) "A" );
+	pthread_create(&t2, &attr, (void * (*)(void *)) printC, (void *) "B" );
 }
