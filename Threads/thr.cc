@@ -8,7 +8,7 @@ pthread_mutex_t lock;
 void printC(const char * s) {
 	//pthread_mutex_lock(&lock);
 
-	for (int i = 0; i < 100; i++) {
+	while (1) {
 		printf("%s", s);
 	}
 
