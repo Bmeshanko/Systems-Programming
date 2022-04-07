@@ -14,7 +14,7 @@ void printC(const char * s) {
 
 	printf("\n");
 
-	pthread_mutex_unlock(&lock, 0);
+	pthread_mutex_unlock(&lock);
 }
 
 int main (int argc, const char **argv) {
@@ -24,7 +24,7 @@ int main (int argc, const char **argv) {
 	pthread_attr_init(&attr);
 	pthread_attr_setscope(&attr, PTHREAD_SCOPE_SYSTEM);
 
-	pthread_mutex_init(&lock);
+	pthread_mutex_init(&lock, 0);
 
 	printC("A");
 
