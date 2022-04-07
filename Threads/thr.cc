@@ -3,7 +3,7 @@
 #include <string.h>
 #include <unistd.h>
 
-pthread_mutex_t lock;
+//pthread_mutex_t lock;
 
 void printC(const char * s) {
 	//pthread_mutex_lock(&lock);
@@ -28,4 +28,6 @@ int main (int argc, const char **argv) {
 
 	pthread_create(&t1, &attr, (void * (*)(void *)) printC, (void *) "A" );
 	pthread_create(&t2, &attr, (void * (*)(void *)) printC, (void *) "B" );
+
+	printC("C");
 }
