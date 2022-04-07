@@ -3,10 +3,18 @@
 #include <string.h>
 #include <unistd.h>
 
+pthread_mutex_t lock;
+
 void printC(const char * s) {
-	while (1) {
+	pthread_mutex_lock(&lock);
+
+	for (int i = 0; i < 10; i++) {
 		printf("%s", s);
 	}
+
+	printf("\n");
+
+	pthread_mutex_unlock(&lock);
 }
 
 int main (int argc, const char **argv) {
@@ -15,6 +23,8 @@ int main (int argc, const char **argv) {
 	
 	pthread_attr_init(&attr);
 	pthread_attr_setscope(&attr, PTHREAD_SCOPE_SYSTEM);
+
+	pthread_mutex_init(&lock);
 
 	printC("A");
 
