@@ -14,7 +14,7 @@ void printC(const char * s) {
 
 	printf("\n");
 
-	pthread_mutex_unlock(&lock);
+	pthread_mutex_unlock(&lock, 0);
 }
 
 int main (int argc, const char **argv) {
