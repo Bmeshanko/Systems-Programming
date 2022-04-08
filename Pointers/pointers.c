@@ -15,4 +15,12 @@ int main(int argc, const char **argv) {
 
 	printf("Address of Pointer: %p\n", p2);
 	printf("Value of Pointer: %s\n", p2);
+
+	fflush(stdout);
+
+	FREE(p1);
+	FREE(p2);
+
+	printf("Value of Pointer: %s\n", p1);
+	printf("Value of Pointer: %s\n", p2);
 }
