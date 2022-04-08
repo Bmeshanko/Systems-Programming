@@ -155,3 +155,6 @@ nothing to commit, working tree clean
  1 file changed, 2 insertions(+)
 [main 3d1a851] Commit from Makefile
  1 file changed, 2 insertions(+)
+[main fcac63c] Commit from Makefile
+ 3 files changed, 23 insertions(+), 1 deletion(-)
+ create mode 100644 Pointers/pointers.c

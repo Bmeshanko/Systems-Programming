@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <Macros/macro.h>
 
 int main(int argc, const char **argv) {
 	char * p1 = (char *) malloc(32); // Stored in the Heap
