@@ -1,4 +1,4 @@
-all: git-commit thr
+all: git-commit thr point
 
 .PHONY: git-commit
 git-commit:
@@ -9,6 +9,9 @@ git-commit:
 
 thr:
 	g++ -o Threads/thr Threads/thr.cc -lpthread
+
+point:
+	gcc -o Pointers/pointers Pointers/pointers.c
 
 clean:
 	rm -f *.o Threads/thr
