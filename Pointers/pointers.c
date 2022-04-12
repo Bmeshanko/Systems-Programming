@@ -18,7 +18,7 @@ int main(int argc, const char **argv) {
 
 	fflush(stdout);
 
-	FREE(p1);
+	free(p1);
 
 	printf("Address of Pointer after FREE: %p\n", p1);
 }

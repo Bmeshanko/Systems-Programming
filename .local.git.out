@@ -195,3 +195,5 @@ Untracked files:
 	Threads/thr
 
 nothing added to commit but untracked files present (use "git add" to track)
+[main 5f6733e] Commit from Makefile
+ 1 file changed, 11 insertions(+)
